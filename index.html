@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Navidad, mi Bombón!</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="nieve"></div> <header class="encabezado">
+        <h1>¡Felices Fiestas, mi Corazón!</h1>
+        <p>Que la *magia* de la Navidad nos *una* (más de lo que ya estamos 😉).</p>
+    </header>
+
+    <main class="contenido-principal">
+        <section class="tarjeta-navidad">
+            <h2>Mi Deseo para Ti</h2>
+            <p>Espero que este año la pases *súper bien. ¡Un abrazo **bien fuerte* que te *apriete el alma! Sabes que te **adoro*.</p>
+            <div class="cuenta-regresiva">
+                <h3>Faltan: <span id="dias-restantes">XX</span> Días</h3>
+            </div>
+        </section>
+
+        <section class="galeria">
+            <div class="imagen-galeria"></div>
+            <div class="imagen-galeria"></div>
+            <div class="imagen-galeria"></div>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <p>&copy; 2025 Hecho con *cariño* por tu *amiga* favorita.</p>
+    </footer>
+
+    <script>
+        // Un poquito de JavaScript para la cuenta regresiva, ¡para que se vea pro!
+        const fechaNavidad = new Date("December 25, 2025 00:00:00").getTime();
+        const ahora = new Date().getTime();
+        const distancia = fechaNavidad - ahora;
+        const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
+        document.getElementById("dias-restantes").innerText = dias;
+    </script>
+
+</body>
+</html>
