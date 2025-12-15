@@ -23,11 +23,11 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    position: relative; /* Necesario para la nieve */
+    position: relative; 
     overflow-x: hidden;
 }
 
-/* --- Fondo de Nieve (¡Qué Bello!) --- */
+/* --- Fondo de Nieve  --- */
 .nieve {
     position: fixed;
     top: 0;
@@ -48,7 +48,7 @@ body {
     100% { background-position: 500px 1000px, 300px 800px, 100px 500px; }
 }
 
-/* --- Encabezado Lleno de Amor --- */
+/* --- Encabezado  --- */
 .encabezado {
     background: var(--rojo-navidad);
     color: white;
@@ -96,7 +96,7 @@ body {
     margin-bottom: 15px;
 }
 
-/* --- La cuenta Regresiva (¡El Apasionado!) --- */
+/* --- La cuenta Regresiva  --- */
 .cuenta-regresiva {
     margin-top: 25px;
     padding: 15px;
@@ -154,4 +154,5 @@ body {
     padding: 15px 0;
     margin-top: 30px;
     border-top: 3px solid var(--dorado);
+
 }
